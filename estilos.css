@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Encode+Sans+Expanded:wght@200;300&family=Fira+Sans:ital,wght@0,300;1,300&family=Libre+Baskerville&family=Montserrat:wght@600&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,500&family=Raleway:ital,wght@0,300;0,700;1,400&family=Yeseva+One&display=swap');
+
+/*configurar toda la pagina*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+
+/*configuraciones generales*/
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body  html{
+    overflow-x: hidden;
+   
+}
+
+
+/*final de configuraciones generales*/
+
+
+/*inicio de navbar*/
+.navbar{
+    background-color: rgb(143, 44, 138);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 20px 50px;
+    transition: .5s;
+    color: whitesmoke;
+}
+
+.navbar h1 {
+    font-size: 35px;
+    font-family: 'Courgette'
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin: 0 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-links li a {
+    color: #fff;
+}
+
+
+/*final del navbar*/
+
+/*header  y tituloss*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/grande2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.header-content h1{
+    font-size: 80px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.ctn {
+    padding: 10px 5px;
+    background: rgb(143, 44, 138);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 25px;
+}
+
+/*final de header y titulos*/
+
+
+/*2da parte*/
+
+.section {
+    padding: 90px 0;
+    width: 90%;
+    margin: 90px auto;
+}
+
+.section .section-title {
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 15px;
+    
+}
+
+.section .section-parrafo {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/grande1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    overflow: hidden;
+    
+}
+
+
+
+.explore-content {
+    width: 60px;
+    padding: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.explore-content h1 {
+    font-size: 50px;
+    padding-left: 200px;
+    margin-top: 10px;
+    
+    
+}
+
+.explore-content p {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 200px;
+    padding-top: 30px;
+    
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+    margin-left: 425px;
+}
+
+.ctn3 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 450px;
+    background: rgb(143, 44, 138);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+hr {
+    margin-top: 80px;
+}
+.content-col h1 {
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 35px;
+    margin-top: 100px;
+}
+.content-col ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 30px auto;
+    font-size: 25px;
+}
+
+.ctn4 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    background: rgb(143, 44, 138);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/*3ra parte*/
+
+.galeria {
+    background-color: rgb(216, 142, 231);
+    color: #fff;
+    padding: 80px 0;
+   
+   
+}
+
+.galeria .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.galeria h1 {
+    font-size: 60px;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.galeria .img-gallery {
+    width: 100%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+    gap: 30px;
+}
+
+.galeria .img-gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.galeria .img-gallery img:hover {
+    transform: scale(1.2);
+}
+
+/*footer*/
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+
+
+
+
+/* SECCION CONTACTO */
+.contacto{
+    background-color: rgb(216, 142, 231);
+    color: #fff;
+    padding: 90px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 20px 0;
+    color: #000;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: #252A2E;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(143, 44, 138);
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: rgb(143, 44, 138);
+    display: inline-block;
+    margin-right: 20px;
+}
